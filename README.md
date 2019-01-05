@@ -16,4 +16,4 @@ Code Editor support python, Git Bash or Terminal, Vagrant virtual Machine and Vi
 2. clone this project and put it inside the vagrant directory.
 3. use terminal to run `vagrant up` into directory.
 4. run`vagrant ssh`. then select this directory.
-5. run the python file by `python newsdata.py`.
+5. run the python file by `python logs_analysis.py`.
