@@ -16,10 +16,10 @@ c.execute(query1)
 rows = c.fetchall()
 print("The Best Three Articles:")
 for row in rows:
-    print("  ", row[0], "-", row[1], " views")
+    print("\t" + row[0] + " -"), (row[1]), (" Views")
 db1.close()
 
-print(" ")
+print("\n")
 
 # second query (The Top Views Authors).
 db2 = psycopg2.connect("dbname=news")
@@ -36,10 +36,10 @@ c.execute(query2)
 rows = c.fetchall()
 print("The Top Views Authors:")
 for row in rows:
-    print("  ", row[0], "-", row[1], " views")
+    print("\t" + row[0] + " -"), (row[1]), (" Views")
 db2.close()
 
-print(" ")
+print("\n")
 
 # third query (Day more than 1% of requests lead to errors).
 db3 = psycopg2.connect("dbname=news")
@@ -58,5 +58,5 @@ c.execute(query3)
 rows = c.fetchall()
 print("Days more than 1% of requests lead to errors:")
 for row in rows:
-    print("  ", row[0], "-", row[1], "% errors")
+    print("\t"), (row[0]), (" "), (row[1]), ("% errors")
 db3.close()
