@@ -1,6 +1,6 @@
 # Logs Analysis Project
 
-This project will analysis logs from DataBase.
+This project will analysis logs from Postgresql DataBase.
 
 ## Description:
 
